@@ -15,3 +15,4 @@ print(4*2)
 print(16/2)
 fav_num=13
 print(f'My favourite number is {fav_num}')
+import this

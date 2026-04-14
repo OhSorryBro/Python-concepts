@@ -21,5 +21,5 @@ print(name.strip())
 # Sufixes & Prefixes removal
 
 file_name = "size_of_letters_exp_1.py"
-print(fileName.removesuffix(".py"))
-print(fileName.removeprefix("size_of_letters_"))
+print(file_name.removesuffix(".py"))
+print(file_name.removeprefix("size_of_letters_"))
