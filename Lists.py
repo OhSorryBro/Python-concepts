@@ -34,3 +34,16 @@ motorcycles2.append('suzuki')
 print(motorcycles2)
 motorcycles2.insert(0,'ducati')
 print(motorcycles2)
+letters = ['a','b','c','d']
+print(letters)
+letters.pop(2)
+print(letters)
+letters.remove('b')
+print(letters)
+
+motorcycles3 = ['honda','yamaha','suzuki','ducati']
+print(motorcycles3)
+too_expensive = 'ducati'
+motorcycles3.remove(too_expensive)
+print(motorcycles3)
+print(f' Bike {too_expensive} is too expensive do keep it on the list.')
