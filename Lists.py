@@ -34,3 +34,18 @@ motorcycles2.append('suzuki')
 print(motorcycles2)
 motorcycles2.insert(0,'ducati')
 print(motorcycles2)
+
+#removing from list
+del motorcycles2[0]
+print(motorcycles2)
+del motorcycles2[1]
+print(motorcycles2)
+popped_motorcycle = motorcycles2.pop()
+print('xx')
+print(popped_motorcycle)
+print(motorcycles2)
+last_bought = motorcycles2.copy()
+last_bought_popped = last_bought.pop()
+print(f'last bought list popped is: {last_bought_popped}')
+print(f'last bought list is: {last_bought}')
+print(f'motorcycles2 list is: {motorcycles2}')
