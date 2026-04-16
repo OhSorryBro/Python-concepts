@@ -62,3 +62,9 @@ too_expensive = 'ducati'
 motorcycles3.remove(too_expensive)
 print(motorcycles3)
 print(f' Bike {too_expensive} is too expensive do keep it on the list.')
+cars = ['bmw', 'audi','toyota','subaru']
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+print(sorted(cars))
