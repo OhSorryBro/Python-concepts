@@ -36,6 +36,7 @@ print(f'{invited_people.pop(3)} {message}')
 print(f'{invited_people.pop(2)} {message}')
 print(f'{invited_people[1]} {invitation_c26}')
 print(f'{invited_people[0]} {invitation_c26}')
+print(f' There were {len(invited_people)} invited people.')
 del invited_people[1]
 del invited_people[0]
 print(invited_people)
