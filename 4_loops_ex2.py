@@ -12,3 +12,20 @@ for pizza in pizza:
 print("My friend's favourite pizza's are:")
 for pizza_1 in friends_pizza:
     print(pizza_1)
+
+dimensions =(200,50)
+print("Starting x and y are:")
+print(dimensions[0])
+print(dimensions[1])
+my_t =(3,)
+dimensions =(400,100)
+print("New dimensions are:")
+for dimension in dimensions:
+    print(dimension)
+
+boufet =("Hot-dog","Curry","Pizza","Meatballs","Eggballs")
+for food in boufet:
+    print(food)
+boufet =["Hotto-doggo","Curry","Pizza-lavista","Meatballs","Eggballs"]
+for food in boufet:
+    print(food)
