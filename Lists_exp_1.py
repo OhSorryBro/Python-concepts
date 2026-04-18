@@ -1,18 +1,15 @@
 invited_people =['Ada','Barbara','Coyote','Delta']
-print(f' Feel invited for dinner dear {invited_people[0]}')
-print(f' Feel invited for dinner dear {invited_people[1]}')
-print(f' Feel invited for dinner dear {invited_people[2]}')
-print(f' Feel invited for dinner dear {invited_people[3]}')
+for person in invited_people:
+    print(f"Feel invited for dinner dear{person}")
 
 print(f' Invitation of: {invited_people[3]} failed.')
 failed_to_invite = invited_people[3]
 invited_people.remove(failed_to_invite)
 invited_people.append('Eve')
 print(invited_people)
-print(f' Feel invited for dinner dear {invited_people[0]}')
-print(f' Feel invited for dinner dear {invited_people[1]}')
-print(f' Feel invited for dinner dear {invited_people[2]}')
-print(f' Feel invited for dinner dear {invited_people[3]}')
+for person in invited_people:
+    print(f"Feel invited for dinner dear {person}")
+
 
 print(f'Bigger table has been found, 3 extra people can be invited')
 invited_people.insert(0,'Frank')
