@@ -46,3 +46,4 @@ favourite_languages = {
 
 language = favourite_languages['Sarah'].title()
 print(f'Sarah favourite programming language is {language}.')
+
