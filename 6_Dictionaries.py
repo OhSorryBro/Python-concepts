@@ -46,3 +46,6 @@ favourite_languages = {
 
 language = favourite_languages['Sarah'].title()
 print(f'Sarah favourite programming language is {language}.')
+
+not_existing =alien_0.get('not existing','This value is not existing')
+print(not_existing)
