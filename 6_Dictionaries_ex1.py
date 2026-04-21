@@ -82,6 +82,4 @@ for river in rivers.keys():
 for country in rivers.values():
     print(country)
 
-# Task iterate thru people_for_questionary if person has already answered and is in fav_languages. 
-# Print thank you for answer. if key is not found, print request to join the questionary
 
