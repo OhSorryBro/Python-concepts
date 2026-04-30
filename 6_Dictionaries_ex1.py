@@ -83,3 +83,34 @@ for country in rivers.values():
     print(country)
 
 
+person = {'first_name':'Tonny','last_name':'Spark','Age':109,'city':'Amsterdam'}
+person_1 = {'first_name':'Johny','last_name':'Bark','Age':10,'city':'Bravia'}
+person_2 = {'first_name':'Bro','last_name':'Talk','Age':69,'city':'Lenovo'}
+
+print('=====')
+#6.7
+#People. Start with the program created in exercise 6.1. 
+#Create two new dictionaries representing different people, and then place all three dictionaries in a list called people. 
+#Iterate through the list and display information about each person.
+people = [person, person_1, person_2]
+
+for person_from_people in people:
+    print(f'{person_from_people['first_name'].title()} {person_from_people['last_name'].title()} lives in {person_from_people['city'].title()} and is {person_from_people['Age']} years old.')
+
+
+#6.8
+# Pets. Create several dictionaries and give them names of animals. In each dictionary, store information about the pets, including the owner
+# Then place these dictionaries in a list called pets. Iterate through the list and display all information about each pet.
+
+
+
+
+#6.9
+# Favorite places. Create a dictionary called favorite_places. Think of three names and use them as the dictionary keys. Assign each person three favorite places.
+# To make the exercise more interesting, you can ask some friends to give their favorite places. Iterate through the dictionary and display the names of all people along with their favorite places.
+
+
+
+#6.10
+# Favorite numbers. Modify the program created in exercise 6.2 from the previous chapter. Now each person can have more than just one favorite number. 
+# Display all people along with their favorite numbers.

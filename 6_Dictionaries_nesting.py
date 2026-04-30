@@ -57,3 +57,24 @@ for name, languages in favorite_languages.items():
         print(f'Favorite programming languages of user {name.title()} are:')
         for language in languages:
             print(f'\t{language.title()}')
+
+users = {
+    'aeinstein':{
+        'first':'albert',
+        'last':'einstein',
+        'location':'princeton'
+    },
+    'mcurie':{
+        'first':'maria',
+        'last':'skłodowska-curie',
+        'location':'parice'
+    }
+}
+
+for username, user_info in users.items():
+    print(f'\n User name: {username}')
+    full_name = f'{user_info['first']} {user_info['last']}'
+    location = user_info['location']
+
+    print(f'\t Full name: {full_name.title()}')
+    print(f'\t City: {location.title()}')
