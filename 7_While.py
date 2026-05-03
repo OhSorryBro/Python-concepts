@@ -5,9 +5,12 @@ while current_number <= 5:
 
 prompt = "\n Tell mi something about you, and I will print it on the screen:"
 prompt += "\n Type in 'End', to close this program:  "
-
+active = True
 message = ""
-while message != 'End':
+while active:
     message = input(prompt)
-    if message != 'End':
+    if message == 'End':
+        active = False
+    else:
         print(message)
+
