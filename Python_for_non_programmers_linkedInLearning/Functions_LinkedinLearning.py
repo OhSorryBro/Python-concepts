@@ -36,3 +36,10 @@ print(new_upper)
 names = ['a', 'b', 'c']
 for name in names:
     print(upper(name))
+
+
+wallet = 40
+
+wallet -= 8 #Testing comments - - some food is bought
+
+wallet =+40 #Testing comments - - payday has arrived
