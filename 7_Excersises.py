@@ -2,6 +2,13 @@
 # Create a list called sandwich_orders with various sandwich names. Create an empty list called finished_sandwiches. Loop through the orders, print a message for each (e.g. "I made your tuna sandwich"), 
 # then move it to finished_sandwiches. When sandwich_orders is empty, print all finished sandwiches.
 print('===')
+sandwich_orders =['tuna','apple','orange','pastrami']
+finished_sandwiches = []
+while len(sandwich_orders) > 0:
+    sandwich_order_to_make = sandwich_orders.pop()
+    print(f"I made {sandwich_order_to_make} sandwich")
+    finished_sandwiches.append(sandwich_order_to_make)
+print(finished_sandwiches)
 
 
 # 7.9. No Pastrami
@@ -9,8 +16,30 @@ print('===')
 # 'pastrami' from the list. Make sure no pastrami sandwich ends up in finished_sandwiches.
 print('===')
 
+sandwich_orders =['tuna','apple','orange','pastrami','pastrami','pastrami']
+finished_sandwiches = []
+print('Our bar is out of pastrami sandwiches.')
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+while len(sandwich_orders) > 0:
+    sandwich_order_to_make = sandwich_orders.pop()
+    print(f"I made {sandwich_order_to_make} sandwich")
+    finished_sandwiches.append(sandwich_order_to_make)
+print(finished_sandwiches)
+
+
 
 # 7.10. Dream Vacation
 # Write a program that asks users: "If you could visit one place in the world, where would you go?" Include a polling loop and a block of code that prints the survey results at the end.
 print('===')
-
+active = True
+answers =[]
+while active:
+    print("If you wish to end loop, type 'end'")
+    answer = input("If you could visit one place in the world, where would you go?\t")
+    if answer =='end':
+        break
+    answers.append(answer)
+for answer in answers:
+    print(answer)
+    
