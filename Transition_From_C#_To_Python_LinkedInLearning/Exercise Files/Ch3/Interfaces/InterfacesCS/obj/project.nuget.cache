@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xdcI813lc6X1mbXfif7UQu09W1tMC9NZ4YrtNIGMMfk8uUALJVk6/hpV0/NPlI+wpG9aWveQxwZHgqnja9vsMw==",
+  "dgSpecHash": "TnSwQv2/E8c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joe\\Desktop\\ExerciseFiles\\Ch3\\Interfaces\\InterfacesCS\\InterfacesCS.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Basics of programming\\Python-concepts\\Transition_From_C#_To_Python_LinkedInLearning\\Exercise Files\\Ch3\\Interfaces\\InterfacesCS\\InterfacesCS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Michał\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Michał\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Michał\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Michał\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

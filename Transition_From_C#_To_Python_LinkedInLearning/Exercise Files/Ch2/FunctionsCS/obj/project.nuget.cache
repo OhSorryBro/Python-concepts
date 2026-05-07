@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uDPWSoi5wqYT3LgOIRBmwMa9wfr1BySkP51CDhQzxBpilvD/ohUWYFn4b71IHjHQL9hb34hhBYVj0bpdPXDplw==",
+  "dgSpecHash": "r6tF43W5fmg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joe\\Desktop\\ExerciseFiles\\Ch2\\FunctionsCS\\FunctionsCS.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Basics of programming\\Python-concepts\\Transition_From_C#_To_Python_LinkedInLearning\\Exercise Files\\Ch2\\FunctionsCS\\FunctionsCS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Michał\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Michał\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Michał\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Michał\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }
