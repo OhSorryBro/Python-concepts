@@ -79,5 +79,58 @@ def get_formatted_name(first_name, last_name):
     full_name = f"{first_name} {last_name}"
     return full_name.title()
 
+
+def get_formatted_name(first_name, last_name, middle_name =''):
+    """Returns formatted first and last name"""
+    if middle_name:
+        full_name = f"{first_name} {middle_name} {last_name}"
+    else:
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
 musician = get_formatted_name('jimi', 'hendrix')
 print(musician)
+
+musician = get_formatted_name('jimi','hendrix', 'lee')
+print(musician)
+
+
+def build_person (first_name, last_name):
+    '''Returns dictionary with information about person'''
+    person ={'first': first_name, 'last' : last_name}
+    return person
+
+musician = build_person('jimi', 'hendrix')
+print(musician)
+
+
+def build_person (first_name, last_name, age =None):
+    '''Returns dictionary with information about person'''
+    person ={'first': first_name, 'last' : last_name}
+    if age:
+        person['age'] = age
+    return person
+
+musician = build_person('jimi', 'hendrix')
+print(musician)
+
+musician = build_person('Bobo', 'Dodo', 27)
+print(musician)
+
+def get_formatted_name(first_name, last_name):
+    """Returns formatted full name"""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+while True:
+    print("\n Please type in your first and last name.")
+    print("Type in 'q' to end")
+    f_name = input("Name: ")
+    if f_name == 'q':
+        break
+    l_name = input("Surname:")
+    if l_name == 'q':
+        break
+
+    formatted_name = get_formatted_name(f_name, l_name)
+    print(f"Welcome, {formatted_name}")
