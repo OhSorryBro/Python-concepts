@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("variablesCS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e132bf0ca4bf75c7b23aefb1cfd301ef949c0c52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c34b046feaa94b44b1aab937ed8da62d142839c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("variablesCS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("variablesCS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
