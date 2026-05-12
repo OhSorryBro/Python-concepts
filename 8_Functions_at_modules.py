@@ -1,4 +1,4 @@
-import pizza
+from pizza import make_pizza as mp
 
-pizza.make_pizza('40cm', 'pepperoni')
-pizza.make_pizza('30cm', 'paprika', 'onion')
+mp('40cm', 'pepperoni')
+mp('30cm', 'paprika', 'onion')
