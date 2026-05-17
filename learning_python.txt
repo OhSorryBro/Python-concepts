@@ -1,0 +1,4 @@
+In Python you can print(), which outputs text or values to the console, and input(), which reads user input as a string. 
+In Python you can int(), float(), str(), and bool() for type conversion, and type() to check what type a variable is. 
+In Python you can len() wich returns the length of a sequence like a list or string, range() generates a sequence of numbers — most commonly used in for loops — and abs() returns the absolute value of a number. 
+In Python you can list(), dict(), tuple(), and set() let you create or convert between core collection types.
