@@ -1,13 +1,27 @@
 from pathlib import Path
 import json
 
-path = Path('username.json')
-if path.exists():
-    contents = path.read_text()
-    username = json.loads(contents)
-    print(f"Welcome back, {username}!")
-else:    
+def get_stored_username(path):
+    if path.exists():
+        contents = path.read_text()
+        username = json.loads(contents)
+        return username
+    else:    
+        return None
+    
+def get_new_username():
     username = input("What is your name? ")
     contents = json.dumps(username)
     path.write_text(contents)
-    print(f"Your name is saved and will be used later. {username}.")
+    return username
+
+def greet_user():
+    path = Path('username.json')
+    username = get_stored_username(path)
+    if username:
+        print(f"Welcome back, {username}!")
+    else:    
+        username = get_new_username(path)
+        print(f"Your name is saved and will be used later. {username}.")
+
+greet_user()
