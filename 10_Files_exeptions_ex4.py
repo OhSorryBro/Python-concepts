@@ -41,6 +41,35 @@ fav_number(path)
 # Then request all that data using json.loads(), save the dictionary to a file, and later read it back using json.loads(). The program should then display a summary of the data about the user.
 print("=====")
 
+from pathlib import Path
+import json
+
+path = Path('user_data.json')
+
+def get_stored_user(path):
+    if path.exists():
+        contents = path.read_text()
+        return json.loads(contents)
+    return None
+
+def get_new_user():
+    username = input("Type in your name: ")
+    userage = input("Type in your age: ")
+    usersex = input("Type in your sex: ")
+    new_user = {"username" : username, "userage" : userage, "usersex" : usersex}
+    contents = json.dumps(new_user)
+    path.write_text(contents)
+    return new_user 
+
+def greet_user():
+    user = get_stored_user(path)
+    if user:
+        print(f"User name is: {user['username']}, user is {user['userage']} years old and user sex is {user['usersex']}")
+        
+    else:
+        user = get_new_user()
+        print(f"Following data is saved: {user}")
+        
 
 
 # 10.14. User Verification
@@ -48,4 +77,37 @@ print("=====")
 # In the greet_user() function, before greeting the existing user with an appropriate message, ask them whether the name on file is correct. If it isn't, call get_new_username() to obtain the correct name.
 print("=====")
 
+from pathlib import Path
+import json
 
+path = Path('user_data.json')
+
+def get_stored_user(path):
+    if path.exists():
+        contents = path.read_text()
+        return json.loads(contents)
+    return None
+
+def get_new_user():
+    username = input("Type in your name: ")
+    userage = input("Type in your age: ")
+    usersex = input("Type in your sex: ")
+    new_user = {"username" : username, "userage" : userage, "usersex" : usersex}
+    contents = json.dumps(new_user)
+    path.write_text(contents)
+    return new_user 
+
+def greet_user():
+    user = get_stored_user(path)
+    if user:
+        answer = input(f"Is the following name correct? {user['username']} 'y' if yes.")
+        if answer == 'y':
+            print(f"Hello! User name is: {user['username']}, user is {user['userage']} years old and user sex is {user['usersex']}")
+        else:
+            user = get_new_user()
+    else:
+        user = get_new_user()
+        print(f"Following data is saved: {user}")
+        
+
+greet_user()
